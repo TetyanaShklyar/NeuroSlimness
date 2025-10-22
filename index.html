@@ -73,7 +73,7 @@
       </div>
     </header>
 
-    <section class="about-program" id="program">
+    <section class="about-program section" id="program">
       <div class="container about__inner">
         <div class="about__content">
           <h2 class="section-title">
@@ -142,7 +142,7 @@
       </div>
     </section>
 
-    <section class="forwho" id="forwho">
+    <section class="forwho section" id="forwho">
       <div class="forwho-bg"></div>
       <div class="container forwho__inner">
         <h2 class="section-title">Для кого <span>з якими запитами</span></h2>
@@ -203,7 +203,7 @@
       </div>
     </section>
     <div class="divider-dots">...</div>
-    <section id="how" class="program">
+    <section id="how section" class="program">
       <h2>4 тижні трансформації</h2>
       <p class="program-intro">
         Тут починається справжня нейроперепрошивка: тіло, мозок і підсвідомість
@@ -310,7 +310,7 @@
       </div>
     </section>
     <div class="divider-dots">...</div>
-    <section class="program-format-section" id="program-format">
+    <section class="program-format-section section" id="program-format">
       <div class="program-format-bg"></div>
       <div class="container program-format__inner">
         <h2 class="section-title">🌿 Формат <span>і логіка гри</span></h2>
@@ -367,7 +367,7 @@
       </div>
     </section>
     <div class="divider-dots">...</div>
-    <section id="authors" class="authors-section">
+    <section id="authors section" class="authors-section">
       <div class="container authors__inner">
         <h2 class="section-title row">Хто <span>автор</span></h2>
         <h2 class="hero__title">ЧИТКОД <span>НейроСтрункість</span></h2>
@@ -457,7 +457,7 @@
       <style></style>
     </section>
 
-    <section class="faq" id="faq">
+    <section class="faq section" id="faq">
       <div class="container">
         <h2 class="section-title">FAQ <span>Часті запитання</span></h2>
         <div class="faq-list">
@@ -674,7 +674,7 @@
         </div>
       </div>
     </section>
-    <section id="results" class="results-section">
+    <section id="results section" class="results-section">
       <div class="container">
         <h2>Результати</h2>
         <p class="subtitle">
@@ -704,7 +704,7 @@
       </div>
     </section>
 
-    <section id="demo" class="demo-section">
+    <section id="demo section" class="demo-section">
       <h2 class="hero__title">ЧИТКОД <span>НейроСтрункість</span></h2>
       <div class="container demo-inner">
         <div class="demo-text">
@@ -793,6 +793,56 @@
           item.classList.toggle("active");
           const icon = btn.querySelector(".faq-icon");
           icon.textContent = item.classList.contains("active") ? "−" : "+";
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll(
+          "section, .about__inner, .features, .forwho-grid, .program-content, .authors-section, .demo-inner, .faq-list"
+        );
+
+        // Додаємо клас scroll-fade до всіх секцій
+        sections.forEach((sec) => sec.classList.add("scroll-fade"));
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target); // анімація разово
+              }
+            });
+          },
+          { threshold: 0.15 }
+        );
+
+        sections.forEach((sec) => observer.observe(sec));
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section");
+
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target); // щоб анімація була один раз
+              }
+            });
+          },
+          {
+            threshold: 0.1, // секція має бути хоча б на 10% у вікні
+          }
+        );
+
+        sections.forEach((section) => {
+          section.classList.add("section"); // додаємо базовий клас для анімації
+          observer.observe(section);
         });
       });
     </script>
