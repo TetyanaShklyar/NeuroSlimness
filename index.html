@@ -24,75 +24,225 @@
 
   <body>
     <header class="header">
-      <div class="container header__inner">
-        <div class="logo">ЧитКод<span> НейроСтрункість</span></div>
-
-        <nav class="nav">
-          <ul class="nav-list">
-            <li><a href="#program">Про програму</a></li>
-            <li><a href="#forwho">Для кого</a></li>
-            <li><a href="#how">Як проходить</a></li>
-            <li><a href="#authors">Хто автори</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#demo">Демо версія</a></li>
-            <li>
-              <a href="#join" class="btn-join"
-                ><i class="fa-brands fa-telegram"></i>Приєднатися</a
-              >
-            </li>
-          </ul>
-        </nav>
-
-        <div class="burger" id="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <div class="hero container">
-        <img src="images/header.jpg" alt="ЧитКод — Нейрострункість" />
+      <div class="hero back">
         <div class="hero__content">
-          <h1 class="hero__title">ЧИТКОД <span>НейроСтрункість</span></h1>
-          <p class="hero__text">
-            «ЧитКод — Нейрострункість» — це науково обґрунтована програма
-            корекції харчової поведінки.
-            <span
-              >Ми працюємо на рівні мозку, гормональної системи й емоційних
-              реакцій.</span
-            >
-            Через нейропрактики, нейротрансову терапію та функціональне
-            харчування. Ми відновлюємо природні механізми регуляції апетиту,
-            ваги та задоволення. <br /><br />
-            Без насильства. Без крайнощів. <br />
-            Лише наука, психологія і результат, який тримається.
+          <h2>
+            Ми працюємо на рівні мозку, гормональної системи й емоційних
+            реакцій.
+          </h2>
+          <p>
+            <span>4 тижні</span> трансформації від <b>Таїсії Сосницької</b> та
+            <b>Олександра Трибрата</b>
           </p>
-          <a href="#join" class="btn-cta">
-            <i class="fa-brands fa-telegram"></i> Приєднатися
+          <h1 class="hero__title">ЧИТКОД <span>НейроСтрункість</span></h1>
+          <div class="about-program mobile-h">
+            <div class="program-block">
+              <span class="checkmark">✔</span>
+              <h4>Метод</h4>
+              <p>Нейропрактики, функціональне харчування.</p>
+            </div>
+
+            <div class="program-block">
+              <span class="checkmark">✔</span>
+              <h4>Принцип</h4>
+              <p>Без насильства, без крайнощів, м’яко.</p>
+            </div>
+
+            <div class="program-block">
+              <span class="checkmark">✔</span>
+              <h4>Результат</h4>
+              <p>Наука, психологія і стійкий ефект.</p>
+            </div>
+          </div>
+
+          <a href="#join" class="btn-cta mobile-h">
+            <i class="fa-brands fa-telegram"></i> Взяти участь
           </a>
+        </div>
+        <div class="hero__img">
+          <img
+            src="images/m1.png"
+            alt="4 тижні трансформації від Таїсії Сосницької та
+           Олександра Трибрата"
+          />
+          <a href="#join" class="btn-cta mobile-w">
+            <i class="fa-brands fa-telegram"></i> Взяти участь
+          </a>
+          <div class="about-program mobile-w">
+            <div class="program-block">
+              <span class="checkmark">✔</span>
+              <h4>Метод</h4>
+              <p>Нейропрактики, функціональне харчування.</p>
+            </div>
+
+            <div class="program-block">
+              <span class="checkmark">✔</span>
+              <h4>Принцип</h4>
+              <p>Без насильства, без крайнощів, м’яко.</p>
+            </div>
+
+            <div class="program-block">
+              <span class="checkmark">✔</span>
+              <h4>Результат</h4>
+              <p>Наука, психологія і стійкий ефект.</p>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
-    <section class="about-program section" id="program">
-      <div class="container about__inner">
+    <section class="blocks" aria-label="Список проблем">
+      <div class="container">
+        <h2 class="section-title">
+          Тобі теж це знайомо?
+          <span
+            >Маленькі програші день за днем, результат не той. Звучить знайомо?
+            Ось типові ситуації й як вони виглядають зсередини.</span
+          >
+        </h2>
+
+        <article class="block" data-index="1">
+          <div class="block-inner">
+            <div class="block-content">
+              <span class="pill">01</span>
+              <h3>Спробувала багато дієт — без результату</h3>
+              <p>
+                Ви пробували різні дієти, детокси, інтенсивні тренування — а
+                результат швидко зникає або взагалі не з’являється. Причина не у
+                силі волі, а у відсутності системного підходу та м’якої
+                підтримки.
+              </p>
+            </div>
+            <div class="block-media">
+              <img
+                src="images/blocks/1.png"
+                alt="Жінка з салатом"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article class="block purple" data-index="2">
+          <div class="block-inner">
+            <div class="block-content">
+              <span class="pill">02</span>
+              <h3>Після 35 тіло поводиться інакше</h3>
+              <p>
+                Метаболізм сповільнюється, гормони змінюються, вага стоїть на
+                місці. Це природні процеси, які можна м’яко скоригувати без
+                жорстких обмежень і стресу для організму.
+              </p>
+            </div>
+            <div class="block-media">
+              <img
+                src="images/blocks/2.png"
+                alt="Жінка тримає живіт"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article class="block orange" data-index="3">
+          <div class="block-inner">
+            <div class="block-content">
+              <span class="pill">03</span>
+              <h3>Знаю що треба, але не застосовую</h3>
+              <p>
+                Ви знаєте: менше перекусів, більше руху, здоровий сон. Але без
+                структури, підтримки і ніжного контролю ці знання рідко
+                перетворюються на звички.
+              </p>
+            </div>
+            <div class="block-media">
+              <img
+                src="images/blocks/3.png"
+                alt="Втомлена жінка"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article class="block" data-index="4">
+          <div class="block-inner">
+            <div class="block-content">
+              <span class="pill">04</span>
+              <h3>Немає часу на спортзал</h3>
+              <p>
+                Діти, робота, постійні турботи — і час для себе завжди в кінці
+                списку. Коли тіло втомлене, страждає і сім’я, і продуктивність,
+                і самооцінка.
+              </p>
+            </div>
+            <div class="block-media">
+              <img
+                src="images/blocks/4.png"
+                alt="Мама з дитиною"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article class="block purple" data-index="5">
+          <div class="block-inner">
+            <div class="block-content">
+              <span class="pill">05</span>
+              <h3>Втома, набряки, поганий сон</h3>
+              <p>
+                Прокидаєтесь знесиленою, весь день працюєте «на автоматі», а
+                ввечері відчуваєте лише втому. Тіло напружене через хронічний
+                стрес та нестачу відновлення.
+              </p>
+            </div>
+            <div class="block-media">
+              <img
+                src="images/blocks/5.png"
+                alt="Жінка втомлена на ліжку"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </article>
+
+        <article class="block orange" data-index="6">
+          <div class="block-inner">
+            <div class="block-content">
+              <span class="pill">06</span>
+              <h3>Худну, але швидко повертаю вагу</h3>
+              <p>
+                Класична ситуація: вага зменшується, але через стрес і голод все
+                повертається. М’який підхід із довгостроковою системою допомагає
+                без зривів і насильства над тілом.
+              </p>
+            </div>
+            <div class="block-media">
+              <img
+                src="images/blocks/2.png"
+                alt="Жінка дивиться на їжу"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-main section" id="program">
+      <div class="container features">
         <div class="about__content">
-          <h2 class="section-title">
-            Нейрострункість - це не про їжу. <span>Це про тебе.</span>
-          </h2>
+          <div class="section-title">
+            <h3>Нейрострункість <br />це не про їжу.</h3>
+            <b>Це про тебе.</b>
+          </div>
 
           <p class="about__lead">
             Ми не воюємо з тілом - ми <strong>відновлюємо зв’язок</strong> між
             мозком, емоціями і тілом, де народжується справжня стрункість.
           </p>
         </div>
-        <div class="about__image">
-          <img
-            src="images/program.png"
-            alt="Ми не воюємо з тілом - ми відновлюємо зв’язок"
-          />
-        </div>
-      </div>
-      <div class="container features">
         <h2 class="hero__title">ЧИТКОД <span>НейроСтрункість</span></h2>
         <ul class="about__features">
           <li class="feature-card">
@@ -137,90 +287,83 @@
           </li>
         </ul>
         <a href="#join" class="btn-cta m-auto">
-          <i class="fa-brands fa-telegram"></i> Приєднатися
+          <i class="fa-brands fa-telegram"></i> Взяти участь
         </a>
       </div>
     </section>
 
-    <section class="forwho section" id="forwho">
-      <div class="forwho-bg"></div>
-      <div class="container forwho__inner">
-        <h2 class="section-title">Для кого <span>з якими запитами</span></h2>
-        <p class="forwho-lead">Програма для тебе, якщо:</p>
-
-        <div class="forwho-grid">
-          <div class="forwho-card">
-            <div class="card-geo">
-              <img src="images/icons/icon-w.png" alt="" />
+    <section class="program-format-section section back" id="program-format">
+      <div class="container program-format__inner">
+        <h2 class="section-title">
+          🌿 Формат
+          <span>
+            Після цього тижня назад ти вже не повернешся. Ти побачиш, що тіло —
+            не ворог, а союзник. Стрункість народжується всередині, а не на
+            вагах.
+          </span>
+        </h2>
+        <div class="program-format-grid">
+          <div class="program-format-card">
+            <div class="card-icon">
+              <img src="images/icons/icon-telegram.png" alt="" />
             </div>
-            <p>Ти втомилась бути на дієтах усе життя</p>
+            <span class="checkmark">✔</span>
+            <p>Все проходить онлайн у Telegram-боті.</p>
           </div>
-          <div class="forwho-card">
-            <div class="card-geo">
-              <img src="images/icons/icon-w.png" alt="" />
+          <div class="program-format-card">
+            <div class="card-icon">
+              <img src="images/icons/icon-clock.png" alt="" />
             </div>
+            <span class="checkmark">✔</span>
             <p>
-              Вважаєш, що схуднення — це біль, контроль і відмова від усього
-              приємного
+              15–20 хвилин на день: практика, гіпносесія або коротке завдання.
             </p>
           </div>
-          <div class="forwho-card">
-            <div class="card-geo">
-              <img src="images/icons/icon-w.png" alt="" />
+          <div class="program-format-card">
+            <div class="card-icon">
+              <img src="images/icons/icon-zoom.png" alt="" />
             </div>
-            <p>Знаєш, що таке йо-йо ефект — вага завжди повертається</p>
+            <span class="checkmark">✔</span>
+            <p>Щотижня — Zoom-вебінари з експертами.</p>
           </div>
-          <div class="forwho-card">
-            <div class="card-geo">
-              <img src="images/icons/icon-w.png" alt="" />
+          <div class="program-format-card">
+            <div class="card-icon">
+              <img src="images/icons/icon-support.png" alt="" />
             </div>
-            <p>Твої зриви — твій найбільший ворог</p>
-          </div>
-          <div class="forwho-card">
-            <div class="card-geo">
-              <img src="images/icons/icon-w.png" alt="" />
-            </div>
-            <p>Ти заїдаєш стрес, бо так простіше, ніж проживати</p>
-          </div>
-          <div class="forwho-card">
-            <div class="card-geo">
-              <img src="images/icons/icon-w.png" alt="" />
-            </div>
+            <span class="checkmark">✔</span>
             <p>
-              І часом тобі соромно за своє тіло, тому легше сказати «це гормони»
-              або «спадковість»
+              Щоденна підтримка від команди, яка допоможе не зупинятися навіть у
+              складні моменти.
+            </p>
+          </div>
+          <div class="program-format-card">
+            <div class="card-icon">
+              <img src="images/icons/icon-game.png" alt="" />
+            </div>
+            <span class="checkmark">✔</span>
+            <p>
+              Ігрова механіка: виконуєш завдання, накопичуєш бали і змагаєшся за
+              головний приз — <strong>повернення вартості програми</strong>.
             </p>
           </div>
         </div>
-
-        <img
-          src="images/program-whom.png"
-          alt="Нейрострункість - це не про їжу"
-        />
-        <p class="forwho-lead">
-          Твоє тіло не ворог. Воно просто хоче, щоб ти нарешті його почула.
-        </p>
       </div>
     </section>
-    <div class="divider-dots">...</div>
-    <section id="how section" class="program">
-      <h2>4 тижні трансформації</h2>
-      <p class="program-intro">
-        Тут починається справжня нейроперепрошивка: тіло, мозок і підсвідомість
-        починають працювати в одному ритмі.
-      </p>
 
-      <div class="program-tabs">
-        <button class="tab-btn active" data-tab="1">1 тиждень</button>
-        <button class="tab-btn" data-tab="2">2 тиждень</button>
-        <button class="tab-btn" data-tab="3">3 тиждень</button>
-        <button class="tab-btn" data-tab="4">4 тиждень</button>
-        <button class="tab-btn" data-tab="vip">💎 VIP</button>
-      </div>
+    <section id="how" class="program">
+      <h2 class="section-title">
+        4 тижні трансформації
+        <span>
+          Тут починається справжня нейроперепрошивка: тіло, мозок і
+          підсвідомість починають працювати в одному ритмі.</span
+        >
+      </h2>
 
       <div class="program-content">
-        <div class="tab-item active" id="tab-1">
-          <h3>1-й тиждень — Ціль і стабільність</h3>
+        <div class="tab-item" id="tab-1">
+          <span class="tab-btn">1 тиждень</span>
+          <img src="images/program/1.jpg" alt="Ціль і стабільність" />
+          <h3>Ціль і стабільність</h3>
           <ul>
             <li>
               Формуєш нову внутрішню ціль — не “мінус 5 кг”, а “я хочу
@@ -240,7 +383,9 @@
         </div>
 
         <div class="tab-item" id="tab-2">
-          <h3>2-й тиждень — Що ти насправді заїдаєш?</h3>
+          <span class="tab-btn">2 тиждень</span>
+          <img src="images/program/2.jpg" alt="Що ти насправді заїдаєш?" />
+          <h3>Що ти насправді заїдаєш?</h3>
           <ul>
             <li>Глибока робота з емоційними тригерами.</li>
             <li>Практика: “Мої справжні причини переїдання”.</li>
@@ -256,7 +401,12 @@
         </div>
 
         <div class="tab-item" id="tab-3">
-          <h3>3-й тиждень — Перепрошивка підсвідомості</h3>
+          <span class="tab-btn">3 тиждень</span>
+          <img
+            src="images/program/3.jpg"
+            alt="1-й тиждень — Ціль і стабільність"
+          />
+          <h3>Перепрошивка підсвідомості</h3>
           <ul>
             <li>Коучинг-сесія: “Як звички формують тіло”.</li>
             <li>Гіпносесія: “Кодування на нові харчові патерни”.</li>
@@ -272,7 +422,12 @@
         </div>
 
         <div class="tab-item" id="tab-4">
-          <h3>4-й тиждень — Тіло, я тобі вдячна</h3>
+          <span class="tab-btn">4 тиждень</span>
+          <img
+            src="images/program/4.jpg"
+            alt="1-й тиждень — Ціль і стабільність"
+          />
+          <h3>Тіло, я тобі вдячна</h3>
           <ul>
             <li>Практика вдячності до себе і тіла.</li>
             <li>Гіпносесія: “Тіло — мій союзник”.</li>
@@ -288,7 +443,12 @@
           </p>
         </div>
 
-        <div class="tab-item" id="tab-vip">
+        <!-- <div class="tab-item" id="tab-vip">
+          <span class="tab-btn">VIP</span>
+          <img
+            src="images/program/1.jpg"
+            alt="1-й тиждень — Ціль і стабільність"
+          />
           <h3>💎 Для VIP-учасниць</h3>
           <ul>
             <li>
@@ -306,156 +466,226 @@
             🎯 <strong>Результат:</strong> стабільна вага, спокій, зникає страх
             “повернути все назад”.
           </p>
+        </div> -->
+      </div>
+
+      <a href="#join" class="btn-cta">
+        <i class="fa-brands fa-telegram"></i> Взяти участь
+      </a>
+    </section>
+
+    <section class="program program-vip">
+      <h2 class="hero__title">ЧИТКОД <span>НейроСтрункість</span></h2>
+      <div class="tab-item" id="tab-vip">
+        <span class="tab-btn">VIP</span>
+        <img src="images/program/vip.jpg" alt="VIP" />
+        <h3>💎 Для VIP-учасниць</h3>
+        <ul>
+          <li>
+            Повний супровід і персональні результати під контролем експертів.
+          </li>
+          <li>
+            Індивідуальна консультація від лікаря Таїсії з розбором аналізів.
+          </li>
+          <li>Щоденний розбір “тарілок” і харчових щоденників.</li>
+          <li>Додаткові гіпносесії 1:1 з Олександром.</li>
+          <li>2 тижні підтримки після завершення програми.</li>
+          <li>Меню для утримання ваги + зворотний зв’язок від дієтолога.</li>
+        </ul>
+        <p class="result">
+          🎯 <strong>Результат:</strong> стабільна вага, спокій, зникає страх
+          “повернути все назад”.
+        </p>
+      </div>
+      <a href="#join" class="btn-cta">
+        <i class="fa-brands fa-telegram"></i> Взяти участь
+      </a>
+    </section>
+
+    <section id="results section" class="results">
+      <div class="container">
+        <h2 class="section-title">
+          Результати та відгуки учасниць
+
+          <span> Таїсії Сосницької та Олександра Трибрата</span>
+        </h2>
+      </div>
+      <div class="strips">
+        <div class="strip">
+          <div class="flow" id="one">
+            <img src="images/results/1.png" />
+            <img src="images/results/2.png" />
+            <img src="images/results/7.jpg" />
+            <img src="images/results/3.png" />
+            <img src="images/results/4.png" />
+            <img src="images/results/5.png" />
+            <img src="images/results/6.jpg" />
+          </div>
+        </div>
+
+        <div class="strip reverse">
+          <div class="flow" id="two">
+            <img src="images/results/1.png" />
+            <img src="images/results/2.png" />
+            <img src="images/results/7.jpg" />
+            <img src="images/results/3.png" />
+            <img src="images/results/4.png" />
+            <img src="images/results/5.png" />
+            <img src="images/results/6.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <img src="images/reviews.png" alt="Результати та відгуки учасниць" />
+    </section>
+
+    <script>
+      document
+        .querySelectorAll(".flow")
+        .forEach((f) => (f.innerHTML += f.innerHTML));
+    </script>
+
+    <section id="authors section" class="authors-section">
+      <div class="container authors__inner">
+        <div class="section-title row">
+          <h3>Про авторів</h3>
+          <b>програми</b>
+        </div>
+        <div class="author-grid">
+          <div class="tab-item">
+            <img
+              src="images/authors/TaisiiaSosnytska.JPG"
+              alt="Таїсія Сосницька"
+            />
+            <h3>Таїсія Сосницька</h3>
+            <ul>
+              <li>Кандидат медичних наук</li>
+              <li>Сімейний лікар</li>
+              <li>Нутриціолог</li>
+              <li>Терапевт</li>
+              <li>Дієтолог</li>
+              <li>Понад 10 років практики</li>
+            </ul>
+            <div class="author-links">
+              <a
+                href="https://www.instagram.com/taya_sosnytskaya"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram Taїsії"
+                ><i class="fa-brands fa-instagram"> </i>instagram</a
+              >
+              <a
+                href="https://www.praxis-dr-sosnytska.de"
+                target="_blank"
+                rel="noopener"
+                aria-label="Сайт Taїsії"
+                ><i class="fa-solid fa-globe"> </i>Сайт</a
+              >
+            </div>
+            <p class="result">
+              🎯 <strong> Моя місія:</strong> змінювати життя жінок, даруючи їм
+              красу і здоров’я з середини, допомагаючи відчути гармонію між
+              тілом, розумом і душею, щоб кожна могла жити у стані легкості та
+              внутрішнього світла
+            </p>
+          </div>
+          <div class="tab-item">
+            <img
+              src="images/authors/OleksandrTribrat.JPEG"
+              alt="Олександр Трибрат"
+            />
+            <h3>Олександр Трибрат</h3>
+            <ul>
+              <li>Гіпнолог</li>
+              <li>Регресолог</li>
+              <li>Експерт з підсвідомості та мислення</li>
+              <li>Сертифікований Holistic Mind Therapy</li>
+              <li>Спеціаліст American Academy of Hypnosis</li>
+              <li>Член American National Guild of Hypnotists.</li>
+            </ul>
+            <div class="author-links">
+              <a
+                href="https://www.instagram.com/alexander.trybrat"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram Олександра"
+                ><i class="fa-brands fa-instagram"> </i>instagram</a
+              >
+            </div>
+            <p class="result">
+              🎯 <strong> Моя місія:</strong> допомагати людям розблоковувати
+              внутрішні ресурси, звільнятись від несвідомих обмежень і
+              відновлювати гармонію, силу та баланс між розумом, тілом і душею
+            </p>
+          </div>
         </div>
       </div>
     </section>
-    <div class="divider-dots">...</div>
-    <section class="program-format-section section" id="program-format">
-      <div class="program-format-bg"></div>
-      <div class="container program-format__inner">
-        <h2 class="section-title">🌿 Формат <span>і логіка гри</span></h2>
-        <p class="program-format-lead">
-          Після цього тижня назад ти вже не повернешся. Ти побачиш, що тіло — не
-          ворог, а союзник. Стрункість народжується всередині, а не на вагах.
+
+    <section id="info" class="info section">
+      <div class="text">
+        <h2>Ти не зобов’язана страждати, щоб змінитись.</h2>
+        <p>
+          Ми покажемо інший шлях. <br />
+          Приєднуйся!
         </p>
-        <h5>Що тебе чекає:</h5>
-
-        <div class="program-format-grid">
-          <div class="program-format-card">
-            <div class="card-icon">
-              <img src="images/icons/icon-telegram.png" alt="" />
-            </div>
-            <p>Все проходить онлайн у Telegram-боті.</p>
-          </div>
-          <div class="program-format-card">
-            <div class="card-icon">
-              <img src="images/icons/icon-clock.png" alt="" />
-            </div>
-            <p>
-              15–20 хвилин на день: практика, гіпносесія або коротке завдання.
-            </p>
-          </div>
-          <div class="program-format-card">
-            <div class="card-icon">
-              <img src="images/icons/icon-zoom.png" alt="" />
-            </div>
-            <p>Щотижня — Zoom-вебінари з експертами.</p>
-          </div>
-          <div class="program-format-card">
-            <div class="card-icon">
-              <img src="images/icons/icon-support.png" alt="" />
-            </div>
-            <p>
-              Щоденна підтримка від команди, яка допоможе не зупинятися навіть у
-              складні моменти.
-            </p>
-          </div>
-          <div class="program-format-card">
-            <div class="card-icon">
-              <img src="images/icons/icon-game.png" alt="" />
-            </div>
-            <p>
-              Ігрова механіка: виконуєш завдання, накопичуєш бали і змагаєшся за
-              головний приз — <strong>повернення вартості програми</strong>.
-            </p>
-          </div>
-        </div>
-
-        <a href="#join" class="btn-cta m-auto">
-          <i class="fa-brands fa-telegram"></i> Приєднатися
+        <a href="#join" class="btn-cta">
+          <i class="fa-brands fa-telegram"></i> Взяти участь
         </a>
       </div>
     </section>
-    <div class="divider-dots">...</div>
-    <section id="authors section" class="authors-section">
-      <div class="container authors__inner">
-        <h2 class="section-title row">Хто <span>автор</span></h2>
-        <h2 class="hero__title">ЧИТКОД <span>НейроСтрункість</span></h2>
-        <p class="authors-lead">
-          Знайомтесь з експертами, які ведуть програму — поруч науковий підхід і
-          тонка робота з підсвідомістю.
-        </p>
-        <div class="author-grid">
-          <article class="author-card" id="author-taya">
-            <div
-              class="author-photo"
-              aria-label="Фото Taїsії"
-              style="
-                background-image: url('images/authors/TaisiiaSosnytska.JPG');
-              "
-            ></div>
-            <div class="author-info">
-              <div>
-                <h3 class="author-name">Dr. Taisiia Sosnytska</h3>
-                <p class="author-title">
-                  Кандидат медичних наук, сімейний лікар, терапевт, дієтолог —
-                  понад 10 років практики
-                </p>
-                <p class="author-mission">
-                  Моя місія — змінювати життя жінок, даруючи їм красу і здоров’я
-                  з середини, допомагаючи відчути гармонію між тілом, розумом і
-                  душею, щоб кожна могла жити у стані легкості та внутрішнього
-                  світла
-                </p>
-              </div>
-              <div class="author-links">
-                <a
-                  href="https://www.instagram.com/taya_sosnytskaya"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Instagram Taїsії"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-                <a
-                  href="https://www.praxis-dr-sosnytska.de"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Сайт Taїsії"
-                  ><i class="fa-solid fa-globe"></i
-                ></a>
-              </div>
-            </div>
-          </article>
-          <article class="author-card" id="author-alex">
-            <div
-              class="author-photo"
-              aria-label="Фото Олександра"
-              style="
-                background-image: url('images/authors/OleksandrTribrat.JPEG');
-              "
-            ></div>
-            <div class="author-info">
-              <div>
-                <h3 class="author-name">Олександр Трибрат</h3>
-                <p class="author-title">
-                  Гіпнолог • Регресолог • Експерт з підсвідомості та мислення
-                </p>
-                <p class="author-credentials">
-                  Сертифікований Holistic Mind Therapy. Спеціаліст American
-                  Academy of Hypnosis. Член American National Guild of
-                  Hypnotists. Онлайн-практика — клієнти з усього світу.
-                </p>
-                <p class="author-mission">
-                  Місія — допомогти жінкам перестати “боротись із собою” і
-                  знайти внутрішній спокій, через який тіло саме вибирає
-                  стрункість.
-                </p>
-              </div>
-              <div class="author-links">
-                <a
-                  href="https://www.instagram.com/alexander.trybrat"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="Instagram Олександра"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-              </div>
-            </div>
-          </article>
+
+    <section id="demo" class="demo-section section back">
+      <h2 class="hero__title">ЧИТКОД <span>НейроСтрункість</span></h2>
+      <div class="container demo-inner">
+        <div class="demo-text">
+          <div class="section-title row">
+            <h3>Спробуй</h3>
+            <b>демо-версію</b>
+          </div>
+          <p class="demo-lead">
+            Ми розуміємо, що рішення прийняти нелегко…<br />
+            Можливо, ти сумніваєшся, чи спрацює це для тебе.<br />
+            Можливо, вже пробувала десятки способів і не віриш у результат.<br /><br />
+            <span>Ми впевнені в нашій програмі.</span><br />
+
+            Тому даруємо можливість спробувати її безкоштовно — у демо-версії
+            <strong>“Чит-Код: Нейрострункість”</strong> (5 днів).<br /><br />
+          </p>
+          <a
+            href="https://t.me/your_telegram_bot"
+            target="_blank"
+            class="btn-cta"
+          >
+            Oтримати демо-доступ
+          </a>
         </div>
       </div>
-      <style></style>
     </section>
+
+    <a
+      href="https://t.me/your_telegram_bot"
+      target="_blank"
+      class="btn-floating-cta"
+    >
+      <i class="fa-brands fa-telegram"></i>
+      Взяти участь
+    </a>
+
+    <script>
+      window.addEventListener("scroll", () => {
+        const btn = document.querySelector(".btn-floating-cta");
+        const heroHeight =
+          document.querySelector("header, .hero, .main-hero")?.offsetHeight ||
+          600;
+
+        if (window.scrollY > heroHeight - 100) {
+          btn.classList.add("visible");
+        } else {
+          btn.classList.remove("visible");
+        }
+      });
+    </script>
 
     <section class="faq section" id="faq">
       <div class="container">
@@ -674,71 +904,19 @@
         </div>
       </div>
     </section>
-    <section id="results section" class="results-section">
-      <div class="container">
-        <h2>Результати</h2>
-        <p class="subtitle">
-          Реальні відгуки учасниць програми «Нейрострункість»
+
+    <section id="info2" class="info info-right section">
+      <div class="text">
+        <h2>Якщо відчуваєте, що вага «застрягла» і нічого не працює</h2>
+        <p>
+          Можливо саме ця програма допоможе досягти омріяної фігури та змінить
+          твоє життя
         </p>
-        <div class="carousel-wrapper">
-          <div class="iphone-frame">
-            <div class="carousel">
-              <img src="images/reviews/9.jpg" alt="Відгук 9" />
-              <img src="images/reviews/10.jpg" alt="Відгук 10" />
-              <img src="images/reviews/11.jpg" alt="Відгук 11" />
-              <img src="images/reviews/12.jpg" alt="Відгук 12" />
-              <img src="images/reviews/13.jpg" alt="Відгук 13" />
-              <img src="images/reviews/14.jpg" alt="Відгук 14" />
-              <img src="images/reviews/15.jpg" alt="Відгук 15" />
-              <img src="images/reviews/1.jpg" alt="Відгук 1" />
-              <img src="images/reviews/2.jpg" alt="Відгук 2" />
-              <img src="images/reviews/3.jpg" alt="Відгук 3" />
-              <img src="images/reviews/4.jpg" alt="Відгук 4" />
-              <img src="images/reviews/5.jpg" alt="Відгук 5" />
-              <img src="images/reviews/6.jpg" alt="Відгук 6" />
-              <img src="images/reviews/7.jpg" alt="Відгук 7" />
-              <img src="images/reviews/8.jpg" alt="Відгук 8" />
-            </div>
-          </div>
-        </div>
+        <a href="#join" class="btn-cta">
+          <i class="fa-brands fa-telegram"></i> Взяти участь
+        </a>
       </div>
     </section>
-
-    <section id="demo" class="demo-section section">
-      <h2 class="hero__title">ЧИТКОД <span>НейроСтрункість</span></h2>
-      <div class="container demo-inner">
-        <div class="demo-text">
-          <h2 class="section-title row">Спробуй <span>демо-версію</span></h2>
-          <p class="demo-lead">
-            Ми розуміємо, що рішення прийняти нелегко…<br />
-            Можливо, ти сумніваєшся, чи спрацює це для тебе.<br />
-            Можливо, вже пробувала десятки способів і не віриш у результат.<br /><br />
-            <span>Ми впевнені в нашій програмі.</span><br />
-            <img src="images/results.png" alt="“Чит-Код: Нейрострункість”" />
-            Тому даруємо можливість спробувати її безкоштовно — у демо-версії
-            <strong>“Чит-Код: Нейрострункість”</strong> (5 днів).<br /><br />
-          </p>
-          <a
-            href="https://t.me/your_telegram_bot"
-            target="_blank"
-            class="btn-cta"
-          >
-            Увійти в Telegram-бот та отримати демо-доступ
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <script>
-      const carousel = document.querySelector(".carousel");
-      const images = document.querySelectorAll(".carousel img");
-      let index = 0;
-      function showNext() {
-        index = (index + 1) % images.length;
-        carousel.style.transform = `translateX(-${index * 100}%)`;
-      }
-      setInterval(showNext, 3000);
-    </script>
 
     <script>
       const burger = document.getElementById("burger");
@@ -768,24 +946,6 @@
         });
       });
     </script>
-
-    <script>
-      const tabButtons = document.querySelectorAll(".tab-btn");
-      const tabItems = document.querySelectorAll(".tab-item");
-
-      tabButtons.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          tabButtons.forEach((b) => b.classList.remove("active"));
-          tabItems.forEach((t) => t.classList.remove("active"));
-
-          btn.classList.add("active");
-          document
-            .querySelector(`#tab-${btn.dataset.tab}`)
-            .classList.add("active");
-        });
-      });
-    </script>
-
     <script>
       document.querySelectorAll(".faq-question").forEach((btn) => {
         btn.addEventListener("click", () => {
@@ -845,6 +1005,77 @@
           observer.observe(section);
         });
       });
+    </script>
+
+    <script>
+      (function () {
+        const blocks = Array.from(document.querySelectorAll(".block"));
+
+        blocks.forEach((b, i) => {
+          b.style.zIndex = String(100 - i);
+        });
+
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              const el = entry.target;
+              if (entry.isIntersecting) {
+                el.classList.add("in-view");
+
+                const idx = parseInt(el.dataset.index || 0, 10);
+                el.style.zIndex = String(1000 + idx);
+              } else {
+                if (
+                  entry.boundingClientRect.top > window.innerHeight ||
+                  entry.boundingClientRect.bottom < 0
+                ) {
+                  el.classList.remove("in-view");
+                  const base = 100 - parseInt(el.dataset.index || 0, 10);
+                  el.style.zIndex = String(base);
+                }
+              }
+            });
+          },
+          {
+            threshold: [0.12, 0.4, 0.75],
+          }
+        );
+
+        blocks.forEach((b) => io.observe(b));
+
+        // small tweak: on scroll, slightly adjust image translate (extra parallax)
+        window.addEventListener(
+          "scroll",
+          throttle(() => {
+            blocks.forEach((block) => {
+              const media = block.querySelector(".block-media img");
+              if (!media) return;
+              const rect = block.getBoundingClientRect();
+              // when block is near the viewport center, shift image a bit
+              const winH = window.innerHeight;
+              const centerOffset = (rect.top + rect.bottom) / 2 - winH / 2;
+              const maxShift = 14; // px
+              const shift = Math.max(
+                -maxShift,
+                Math.min(maxShift, -centerOffset * 0.02)
+              );
+              media.style.transform = `translateY(${shift}px)`;
+            });
+          }, 40)
+        );
+
+        // utility throttle
+        function throttle(fn, wait) {
+          let t = 0;
+          return function (...args) {
+            const now = Date.now();
+            if (now - t > wait) {
+              t = now;
+              fn.apply(this, args);
+            }
+          };
+        }
+      })();
     </script>
   </body>
 </html>
