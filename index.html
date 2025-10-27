@@ -672,21 +672,6 @@
       Взяти участь
     </a>
 
-    <script>
-      window.addEventListener("scroll", () => {
-        const btn = document.querySelector(".btn-floating-cta");
-        const heroHeight =
-          document.querySelector("header, .hero, .main-hero")?.offsetHeight ||
-          600;
-
-        if (window.scrollY > heroHeight - 100) {
-          btn.classList.add("visible");
-        } else {
-          btn.classList.remove("visible");
-        }
-      });
-    </script>
-
     <section class="faq section" id="faq">
       <div class="container">
         <h2 class="section-title">FAQ <span>Часті запитання</span></h2>
@@ -917,6 +902,24 @@
         </a>
       </div>
     </section>
+
+    <script>
+      document.addEventListener("scroll", () => {
+        const button = document.querySelector(".btn-cta-floating");
+        const footer = document.getElementById("info2");
+
+        if (!button || !footer) return;
+
+        const footerTop = footer.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (footerTop < windowHeight - 100) {
+          button.classList.add("hidden");
+        } else {
+          button.classList.remove("hidden");
+        }
+      });
+    </script>
 
     <script>
       const burger = document.getElementById("burger");

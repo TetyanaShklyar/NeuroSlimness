@@ -1081,6 +1081,7 @@ section {
   justify-content: space-between;
   align-items: center;
   transition: color 0.3s ease;
+  color: var(--orange);
 }
 .faq-question:hover {
   color: var(--orange);
@@ -1413,9 +1414,17 @@ section {
     padding: 20px 40px 30px 20px;
   }
   .hero__title span {
-    font-size: 19px;
-    margin-top: -5px;
-    letter-spacing: 2px;
+    background-color: var(--orange);
+    padding: 5px 15px;
+    color: #fff;
+    border-radius: 30px;
+    max-width: max-content;
+    margin: auto;
+    font-weight: 300;
+    display: flex;
+    font-family: var(--font-serif);
+    font-size: 24px;
+    margin-top: -15px;
   }
   .demo-lead span {
     font-size: 20px;
