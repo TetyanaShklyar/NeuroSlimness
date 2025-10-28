@@ -1591,6 +1591,11 @@ section {
   background-image: url(images/icons/neuro.png);
 }
 
+.program-vip .tab-item img {
+  height: 375px;
+  object-position: top;
+}
+
 .program-vip .tab-item {
   background: linear-gradient(
     180deg,
@@ -1883,6 +1888,27 @@ section {
   }
 }
 
+.section-title-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.section-title-row h5 {
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 30px;
+  background-image: var(--purple);
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 1048px) {
   .about-main .section-title {
     font-size: 24px;
@@ -1896,5 +1922,8 @@ section {
   .program-vip .tab-btn {
     background-color: var(--orange);
     font-size: 14px;
+  }
+  .program-vip .tab-item img {
+    height: 300px;
   }
 }
