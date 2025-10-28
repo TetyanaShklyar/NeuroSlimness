@@ -1351,6 +1351,10 @@ section {
   display: flex !important;
 }
 
+.about-program.mobile-h {
+  display: grid !important;
+}
+
 @media (max-width: 1190px) {
   .hero__content {
     max-width: 600px;
@@ -1365,7 +1369,8 @@ section {
   .mobile-w {
     display: flex !important;
   }
-  .mobile-h {
+  .mobile-h,
+  .about-program.mobile-h {
     display: none !important;
   }
 }
@@ -1646,10 +1651,10 @@ section {
   }
   .program-content {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
   }
   .program .btn-cta {
-    margin-top: -30px;
+    margin-top: 25px;
     width: 250px;
   }
   .program-vip .btn-cta {
@@ -1925,5 +1930,15 @@ section {
   }
   .program-vip .tab-item img {
     height: 300px;
+    object-position: 85%;
+  }
+  .faq .section-title {
+    margin-bottom: 20px;
+  }
+  .faq .section-title span {
+    margin-top: 0;
+  }
+  #tab-demo.tab-item img {
+    object-position: 50%;
   }
 }
