@@ -904,21 +904,39 @@
     </section>
 
     <script>
-      document.addEventListener("scroll", () => {
-        const button = document.querySelector(".btn-cta-floating");
+      (function () {
+        const button = document.querySelector(".btn-floating-cta");
         const footer = document.getElementById("info2");
 
-        if (!button || !footer) return;
-
-        const footerTop = footer.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        if (footerTop < windowHeight - 100) {
-          button.classList.add("hidden");
-        } else {
-          button.classList.remove("hidden");
+        if (!button) return;
+        if (!footer) {
+          button.classList.add("visible");
+          return;
         }
-      });
+
+        function checkButtonVisibility() {
+          const footerTop = footer.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+          if (footerTop < windowHeight - 100) {
+            button.classList.remove("visible");
+          } else {
+            button.classList.add("visible");
+          }
+        }
+
+        checkButtonVisibility();
+        let rafId = null;
+        function onScroll() {
+          if (rafId) cancelAnimationFrame(rafId);
+          rafId = requestAnimationFrame(() => {
+            checkButtonVisibility();
+            rafId = null;
+          });
+        }
+
+        window.addEventListener("scroll", onScroll, { passive: true });
+        window.addEventListener("resize", checkButtonVisibility);
+      })();
     </script>
 
     <script>
