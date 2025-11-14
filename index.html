@@ -55,7 +55,11 @@
             </div>
           </div>
 
-          <a href="#join" class="btn-cta mobile-h">
+          <a
+            href="https://secure.wayforpay.com/button/bd5bbf367963c"
+            target="_blank"
+            class="btn-cta mobile-h"
+          >
             <i class="fa-brands fa-telegram"></i> Взяти участь
           </a>
         </div>
@@ -65,7 +69,11 @@
             alt="4 тижні трансформації від Таїсії Сосницької та
            Олександра Трибрата"
           />
-          <a href="#join" class="btn-cta mobile-w">
+          <a
+            href="https://secure.wayforpay.com/button/bd5bbf367963c"
+            target="_blank"
+            class="btn-cta mobile-w"
+          >
             <i class="fa-brands fa-telegram"></i> Взяти участь
           </a>
           <div class="about-program mobile-w">
@@ -286,7 +294,11 @@
             </p>
           </li>
         </ul>
-        <a href="#join" class="btn-cta m-auto">
+        <a
+          href="https://secure.wayforpay.com/button/bd5bbf367963c"
+          target="_blank"
+          class="btn-cta m-auto"
+        >
           <i class="fa-brands fa-telegram"></i> Взяти участь
         </a>
       </div>
@@ -297,8 +309,8 @@
         <h2 class="section-title">
           🌿 Формат
           <span>
-            Після цього тижня назад ти вже не повернешся. Ти побачиш, що тіло —
-            не ворог, а союзник. Стрункість народжується всередині, а не на
+            Після цієї програми назад ти вже не повернешся. Ти побачиш, що тіло
+            — не ворог, а союзник. Стрункість народжується всередині, а не на
             вагах.
           </span>
         </h2>
@@ -308,7 +320,7 @@
               <img src="images/icons/icon-telegram.png" alt="" />
             </div>
             <span class="checkmark">✔</span>
-            <p>Все проходить онлайн у Telegram-боті.</p>
+            <p>Все проходить онлайн у закритому Telegram-каналі.</p>
           </div>
           <div class="program-format-card">
             <div class="card-icon">
@@ -473,7 +485,11 @@
         </div>
       </div>
 
-      <a href="#join" class="btn-cta">
+      <a
+        href="https://secure.wayforpay.com/button/bd5bbf367963c"
+        target="_blank"
+        class="btn-cta"
+      >
         <i class="fa-brands fa-telegram"></i> Взяти участь
       </a>
     </section>
@@ -508,7 +524,11 @@
           “повернути все назад”.
         </p>
       </div>
-      <a href="#join" class="btn-cta">
+      <a
+        href="https://secure.wayforpay.com/button/bd5bbf367963c"
+        target="_blank"
+        class="btn-cta"
+      >
         <i class="fa-brands fa-telegram"></i> Взяти участь
       </a>
     </section>
@@ -640,7 +660,11 @@
           Ми покажемо інший шлях. <br />
           Приєднуйся!
         </p>
-        <a href="#join" class="btn-cta">
+        <a
+          href="https://secure.wayforpay.com/button/bd5bbf367963c"
+          target="_blank"
+          class="btn-cta"
+        >
           <i class="fa-brands fa-telegram"></i> Взяти участь
         </a>
       </div>
@@ -716,13 +740,13 @@
         </p>
       </div>
 
-      <a href="#join" class="btn-cta">
+      <button class="btn-cta open-popup">
         <i class="fa-brands fa-telegram"></i> Взяти участь
-      </a>
+      </button>
     </section>
 
     <a
-      href="https://t.me/your_telegram_bot"
+      href="https://secure.wayforpay.com/button/bd5bbf367963c"
       target="_blank"
       class="btn-floating-cta"
     >
@@ -955,11 +979,84 @@
           Можливо саме ця програма допоможе досягти омріяної фігури та змінить
           твоє життя
         </p>
-        <a href="#join" class="btn-cta">
+        <a
+          href="https://secure.wayforpay.com/button/bd5bbf367963c"
+          target="_blank"
+          class="btn-cta"
+        >
           <i class="fa-brands fa-telegram"></i> Взяти участь
         </a>
       </div>
     </section>
+
+    <!-- MODAL OVERLAY -->
+    <div class="popup-overlay" id="popup">
+      <div class="popup-content">
+        <button class="popup-close">&times;</button>
+
+        <h2 class="popup-title">🚧 Наразі недоступно</h2>
+
+        <p class="popup-subtitle">
+          Продукт на етапі покращень. Заповніть форму і ми повідомимо, коли все
+          буде готово 💛
+        </p>
+
+        <!-- <form
+          class="popup-form"
+          action="https://formsubmit.co/kontakt@praxis-dr-sosnytska.de"
+          method="POST"
+        > -->
+        <form
+          class="popup-form"
+          action="https://formsubmit.co/tetyana.shklyar@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+
+          <label>Ваше ім'я:</label>
+          <input
+            type="text"
+            name="Name"
+            placeholder="Введіть своє ім’я"
+            required
+          />
+
+          <label> Номер телефону (Telegram) або нік: </label>
+          <input
+            type="text"
+            name="Telegram"
+            placeholder="@nickname або номер"
+            required
+          />
+
+          <button type="submit" class="popup-btn">Відправити 🚀</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const openBtn = document.querySelector(".open-popup");
+      const popup = document.getElementById("popup");
+      const closeBtn = document.querySelector(".popup-close");
+
+      openBtn.addEventListener("click", () => {
+        popup.classList.add("active");
+        document.body.style.overflow = "hidden";
+      });
+
+      closeBtn.addEventListener("click", () => {
+        popup.classList.remove("active");
+        document.body.style.overflow = "auto";
+      });
+
+      popup.addEventListener("click", (e) => {
+        if (e.target === popup) {
+          popup.classList.remove("active");
+          document.body.style.overflow = "auto";
+        }
+      });
+    </script>
 
     <script>
       (function () {
